@@ -17,7 +17,7 @@ library(smotefamily)
 library("MLmetrics")
 library("class") 
 #读取数据
-setwd("E:/大学生活/学习/大三上/数据挖掘/期末报告/bank-additional")
+setwd("bank-additional")
 Data <- read.csv("bank-additional.csv",sep=';',as.is = FALSE)
 colnames(Data)[16:20] <- c("emp_rate", "cpi","cci","r3m","employed")
 head(Data,2)
